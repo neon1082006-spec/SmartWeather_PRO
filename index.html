@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Weather VN</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- OpenLayers -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css">
+  <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- LEFT: WEATHER -->
+  <div class="card">
+    <h1>🌤️ Smart Weather VN</h1>
+
+    <!-- DROPDOWN (JS sẽ tự load tỉnh) -->
+    <select id="city"></select>
+
+    <!-- TIME -->
+    <div id="time"></div>
+
+    <!-- CURRENT WEATHER -->
+    <div id="result"></div>
+
+    <!-- FORECAST -->
+    <div id="forecast"></div>
+  </div>
+
+  <!-- RIGHT: MAP -->
+  <div class="map-box">
+    <div id="map"></div>
+  </div>
+
+</div>
+
+<!-- DATA (phải load trước) -->
+<script src="cities.js"></script>
+
+<!-- MAIN SCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
